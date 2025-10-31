@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Math; //pasang namespace
+
     class luaslingkaran {
         
         public const phi = 3.14;
@@ -7,6 +9,11 @@
 
         public function __construct($isiJari = 1) {
             $this->jari = $isiJari;
+        }
+
+        public function __destruct() {
+            echo "<br>";
+            echo "Au ah cape mau beli truk";
         }
 
         public function tampil($nama = 'ban') {
